@@ -63,7 +63,7 @@
             <div class="d-flex flex-column align-items-center">
 
                 <p>
-                    <button @click="showOfCanvasMenu" :class="showMenu ? '' : 'collapsed'" class="my_button rounded-pill p-2 px-4 d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    <button @click="showOfCanvasMenu" :class="showMenu ? '' : 'collapsed'" class="my_button text-white rounded-pill p-2 px-4 d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                         <font-awesome-icon icon="fa-solid fa-clock" />
                         ORARI
                     </button>
