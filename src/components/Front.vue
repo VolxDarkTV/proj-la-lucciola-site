@@ -32,7 +32,7 @@ export default{
 
         <!-- Btn -->
         <div>
-            <button class="my_button rounded-pill">
+            <button class="my_button text-white rounded-pill">
                 Richiedi Preventivo
             </button>
         </div>
