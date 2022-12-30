@@ -81,7 +81,6 @@
                                     </span>
                                 </td>
                             </tr>
-                            <br>
                             <tr>
                                 <td>
                                     <span>
@@ -128,7 +127,7 @@
                             <tr>
                                 <span> 
                                     <span>
-                                        <span class="fw-bold color">sab: </span> 
+                                        <span class="fw-bold color">dom: </span> 
                                         <span>08:30–13:00, </span> 
                                     </span>
                                     <span>15:00–19:30</span>
