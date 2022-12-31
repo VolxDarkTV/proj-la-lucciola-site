@@ -121,6 +121,29 @@ export default{
 
             </div>
 
+            <!-- Links -->
+            <div class="container d-flex flex-column align-items-center gap-5">
+                <!-- More -->
+                <a href="https://local.google.com/place?id=766670633248371839&use=posts&lpsid=6635583071908554419" class="color">
+                    <h6 class="fw-bold">More</h6>
+                </a>
+
+                <div class="container d-flex justify-content-between gap-3">
+
+                    <!-- Write a Review -->
+                    <a href="https://search.google.com/local/writereview?placeid=ChIJd5DRoxlpRhMRfzR-AuHCowo" class="color d-flex align-items-center gap-2">
+                        <font-awesome-icon icon="fa-solid fa-pen-nib" />
+                        <h6 class="fw-bold">RECENSIONE</h6>
+                    </a>
+
+                    <!-- info -->
+                    <a href="https://search.google.com/local/reviews?placeid=ChIJd5DRoxlpRhMRfzR-AuHCowo" class="color d-flex align-items-center gap-2">
+                        <h6 class="fw-bold">INFO</h6>
+                        <font-awesome-icon icon="fa-solid fa-circle-info" />
+                    </a>
+
+                </div>
+            </div>
         </div>
 
     </section>
