@@ -42,13 +42,13 @@
                                 <font-awesome-icon class="fs-3" :icon="['far', 'pen-to-square']" />
                                 <h4>Aggiornamenti</h4>
                             </a>
-                            <a @click="showOfCanvasMenu" href="#reviews" class="d-flex align-items-center gap-5">
-                                <font-awesome-icon class="fs-3" :icon="['far', 'comment']" />
-                                <h4>Testimonianze</h4>
-                            </a>
                             <a @click="showOfCanvasMenu" href="#galleria" class="d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" :icon="['far', 'images']" />
                                 <h4>Galleria</h4>
+                            </a>
+                            <a @click="showOfCanvasMenu" href="#reviews" class="d-flex align-items-center gap-5">
+                                <font-awesome-icon class="fs-3" :icon="['far', 'comment']" />
+                                <h4>Testimonianze</h4>
                             </a>
                             <a @click="showOfCanvasMenu" href="tel:+39-320-946-5587" class="d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" icon="fa-solid fa-phone" />
