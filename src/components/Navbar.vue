@@ -39,8 +39,8 @@
                         <div class="d-flex flex-column gap-3">
 
                             <a @click="showOfCanvasMenu" href="#" class="d-flex align-items-center gap-5">
-                                <font-awesome-icon class="fs-3" :icon="['far', 'pen-to-square']" />
-                                <h4>Aggiornamenti</h4>
+                                <font-awesome-icon class="fs-3" icon="fa-solid fa-house" />
+                                <h4>Home</h4>
                             </a>
                             <a @click="showOfCanvasMenu" href="#galleria" class="d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" :icon="['far', 'images']" />
