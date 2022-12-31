@@ -17,6 +17,7 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "vue": "^3.2.45",
+    "vue-star-rating": "^2.1.0",
     "vue3-carousel": "^0.2.9"
   },
   "devDependencies": {

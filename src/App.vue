@@ -5,7 +5,7 @@ import 'animate.css';
   // Imports
   import Navbar from './components/Navbar.vue';
   import Front from './components/Front.vue';
-  
+  import Review from './components/Review.vue';
   import Contacts from './components/Contacts.vue';
   import Footer from './components/Footer.vue';
 
@@ -13,7 +13,7 @@ import 'animate.css';
     components:{
       Navbar,
       Front,
-
+      Review,
       Contacts,
       Footer,
     }
@@ -24,6 +24,7 @@ import 'animate.css';
   <Navbar/>
   <main>
     <Front id="galleria"/>
+    <Review/>
     <Contacts/>
     <Footer />
   </main>
