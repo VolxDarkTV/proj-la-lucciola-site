@@ -38,19 +38,19 @@
 
                         <div class="d-flex flex-column gap-3">
 
-                            <a href="#" class="d-flex align-items-center gap-5">
+                            <a @click="showOfCanvasMenu" href="#" class="d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" :icon="['far', 'pen-to-square']" />
                                 <h4>Aggiornamenti</h4>
                             </a>
-                            <a href="#" class="d-flex align-items-center gap-5">
+                            <a @click="showOfCanvasMenu" href="#" class="d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" :icon="['far', 'comment']" />
                                 <h4>Testimonianze</h4>
                             </a>
-                            <a href="#galleria" class="d-flex align-items-center gap-5">
+                            <a @click="showOfCanvasMenu" href="#galleria" class="d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" :icon="['far', 'images']" />
                                 <h4>Galleria</h4>
                             </a>
-                            <a href="tel:+39-320-946-5587" class="d-flex align-items-center gap-5">
+                            <a @click="showOfCanvasMenu" href="tel:+39-320-946-5587" class="d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" icon="fa-solid fa-phone" />
                                 <h4>Contatti</h4>
                             </a> 
@@ -59,13 +59,13 @@
 
                         <div class="d-flex flex-column gap-3 pb-5">
 
-                            <a href="#" class="d-lg-none d-flex align-items-center gap-5">
+                            <a @click="showOfCanvasMenu" href="#" class="d-lg-none d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" icon="fa-solid fa-receipt" />
                                 <h4>Richiedi un preventivo</h4>
                             </a>
                             
                             <!-- Street Address -->
-                            <a href="https://www.google.com/maps/place/LA+LUCCIOLA+bar+pizzeria+gelateria/data=!3m1!4b1!4m2!3m1!1s0x13466919a3d19077:0xaa3c2e1027e347f" class="d-lg-none d-flex align-items-center gap-5">
+                            <a @click="showOfCanvasMenu" href="https://www.google.com/maps/place/LA+LUCCIOLA+bar+pizzeria+gelateria/data=!3m1!4b1!4m2!3m1!1s0x13466919a3d19077:0xaa3c2e1027e347f" class="d-lg-none d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" :icon="['far', 'map']" />
                                 <h4>Indicazioni Stradali</h4>
                             </a> 
