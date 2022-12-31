@@ -55,7 +55,7 @@
                                 <h4>Contatti</h4>
                             </a> 
 
-                            <a @click="showOfCanvasMenu" href="#contacts" class="d-flex align-items-center gap-5">
+                            <a @click="showOfCanvasMenu" href="#time" class="d-flex align-items-center gap-5">
                                 <font-awesome-icon class="fs-3" icon="fa-solid fa-clock" />
                                 <h4>Orari</h4>
                             </a>

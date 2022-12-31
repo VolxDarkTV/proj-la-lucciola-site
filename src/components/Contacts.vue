@@ -4,7 +4,8 @@
             return{
                 showMenu: false,
             }
-        }, methods: {
+        }, 
+        methods: {
             showOfCanvasMenu(){
                 this.showMenu ? this.showMenu = false : this.showMenu = true;
             }
@@ -60,7 +61,7 @@
             </div>
 
             <!-- Time -->
-            <div class="d-flex flex-column align-items-center">
+            <div class="d-flex flex-column align-items-center gap-3">
 
                 <p>
                     <button @click="showOfCanvasMenu" :class="showMenu ? '' : 'collapsed'" class="my_button text-white rounded-pill p-2 px-4 d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
@@ -68,9 +69,9 @@
                         ORARI
                     </button>
                 </p>
-                <div style="min-height: 120px;">
+                <div id="time" style="min-height: 120px;">
                   <div class="collapse collapse-horizontal" :class="showMenu ? 'show' : ''" id="collapseWidthExample">
-                    <div class="bg-dark card card-body" style="width: 300px;">
+                    <div class="bg-dark card card-body d-flex flex-column gap-3" style="width: 300px;">
                         <tbody>
                             <tr>
                                 <th>Giorni</th>
