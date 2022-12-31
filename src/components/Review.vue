@@ -122,7 +122,7 @@ export default{
             </div>
 
             <!-- Links -->
-            <div class="container d-flex flex-column align-items-center gap-5">
+            <div class="container d-flex flex-column align-items-center gap-5 p-0">
                 <!-- More -->
                 <a href="https://local.google.com/place?id=766670633248371839&use=posts&lpsid=6635583071908554419" class="color">
                     <h6 class="fw-bold">More</h6>
