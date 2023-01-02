@@ -20,7 +20,7 @@ export default{
             <!-- Logo -->
             <a href="#" class="my_logo d-flex align-items-center">
                 <!-- <img src="https://cdn-icons-png.flaticon.com/512/310/310513.png?w=360" alt="Lucciola"> -->
-                <img src="../../public/img/La LUCCIOLA.png" alt="Lucciola">
+                <img src="../../public/img/La_LUCCIOLA.png" alt="Lucciola">
             </a>
 
         </div>

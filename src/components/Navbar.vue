@@ -30,7 +30,7 @@
                   <div class="offcanvas-header">
                     <!-- Logo -->
                 <a href="#" @click="showOfCanvasMenu" class="my_logo d-flex align-items-center">
-                    <img src="../../public/img/La LUCCIOLA.png" alt="Lucciola">
+                    <img src="../../public/img/La_LUCCIOLA.png" alt="Lucciola">
                 </a>
                     <button @click="showOfCanvasMenu" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
@@ -94,7 +94,7 @@
                 
                 <!-- Logo -->
                 <a href="#" class="my_logo d-flex align-items-center">
-                    <img src="../../public/img/La LUCCIOLA.png" alt="Lucciola">
+                    <img src="../../public/img/La_LUCCIOLA.png" alt="Lucciola">
                 </a>
 
             </div>
