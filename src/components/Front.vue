@@ -18,9 +18,10 @@ export default{
             <h1 class="animate__animated animate__bounceInDown fw-bold">La Lucciola</h1> 
 
             <!-- Logo -->
-            <div class="my_logo d-flex align-items-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/310/310513.png?w=360" alt="Lucciola">
-            </div>
+            <a href="#" class="my_logo d-flex align-items-center">
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/310/310513.png?w=360" alt="Lucciola"> -->
+                <img src="../../public/img/La LUCCIOLA.png" alt="Lucciola">
+            </a>
 
         </div>
 

@@ -51,7 +51,19 @@
   // Imgs
   .my_logo{
     width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #242424;
+    cursor: pointer;
   }
+  .my_logo img{
+    filter: invert(1);
+  }
+  .my_logo:hover{
+    transform: scale(1.5);
+    background-color: rgb(47, 47, 47);
+  }
+
   img{
     width: 100%;
   }

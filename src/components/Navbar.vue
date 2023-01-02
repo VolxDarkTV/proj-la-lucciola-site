@@ -29,9 +29,9 @@
                 <div :class="showMenu ? 'show' : ''" class="my_offcanvas_background offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                   <div class="offcanvas-header">
                     <!-- Logo -->
-                <div class="my_logo d-flex align-items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/310/310513.png?w=360" alt="Lucciola">
-                </div>
+                <a href="#" @click="showOfCanvasMenu" class="my_logo d-flex align-items-center">
+                    <img src="../../public/img/La LUCCIOLA.png" alt="Lucciola">
+                </a>
                     <button @click="showOfCanvasMenu" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body ps-5 d-flex flex-column justify-content-between gap-3">
@@ -93,9 +93,9 @@
                 </div>
                 
                 <!-- Logo -->
-                <div class="my_logo d-flex align-items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/310/310513.png?w=360" alt="Lucciola">
-                </div>
+                <a href="#" class="my_logo d-flex align-items-center">
+                    <img src="../../public/img/La LUCCIOLA.png" alt="Lucciola">
+                </a>
 
             </div>
 
