@@ -4,7 +4,7 @@ import Carousel from './front_component/Carousel.vue';
 export default{
     components:{
         Carousel,
-    }
+    },
 }
 </script>
 
