@@ -15,7 +15,7 @@ export default{
             <!-- Pre Title -->
             <div>
                 <a href="#reviews" class="color">
-                    <h4 id="reviews" class="fw-bold">Testimonianze</h4>
+                    <h4 id="reviews" class="fw-bold">Recensioni</h4>
                 </a>
             </div>
 

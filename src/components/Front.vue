@@ -1,10 +1,29 @@
 <script>
+import { store } from '../store';
+// Moment
+import moment, { weekdays } from 'moment';
 // Imports
 import Carousel from './front_component/Carousel.vue';
 export default{
+    data(){
+        return{
+            store,
+        }
+    },
     components:{
         Carousel,
     },
+    // Moment
+    created: function () {
+        this.moment = moment;
+        moment.locale('it', {
+            weekdaysShort : ["Sab", "Lun", "Mar", "Mer", "Gio", "Ven", "Dom"]
+        });
+    },
+    setup() {
+        let todaysDate = new Date();
+    },
+   
 }
 </script>
 
@@ -27,8 +46,15 @@ export default{
 
         <!-- General Info -->
         <div class="d-flex flex-column gap-2">
+            
             <h6>Bar e Pizzeria</h6>
-            <h6>Sabato apertura alle ore 08:30</h6>
+
+            <div>
+                {{ moment().format("ddd") }} 
+                <span>apertura alle ore </span> 
+                <span>8:30</span> 
+            </div>
+
         </div>
 
         <!-- Btn -->

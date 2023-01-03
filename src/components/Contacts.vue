@@ -1,15 +1,21 @@
 <script>
+import { store } from '../store';
     export default{
+        
         data(){
             return{
+                store,
                 showMenu: false,
             }
         }, 
+
+
         methods: {
             showOfCanvasMenu(){
                 this.showMenu ? this.showMenu = false : this.showMenu = true;
             }
         }
+        
     }
 </script>
 
@@ -73,66 +79,13 @@
                   <div class="collapse collapse-horizontal" :class="showMenu ? 'show' : ''" id="collapseWidthExample">
                     <div class="bg-dark card card-body d-flex flex-column gap-3" style="width: 300px;">
                         <tbody>
-                            <tr>
-                                <th>Giorni</th>
+                            <tr v-for="clock in store.clockData">
                                 <td>
                                     <span>
-                                        <span class="fw-bold color">lun: </span>
-                                        <span>15:00–19:30</span>
+                                        <span class="fw-bold color"> {{ clock.day }} </span>
+                                        <span> {{ clock.clockTime }} </span>
                                     </span>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>
-                                        <span class="fw-bold color">mar: </span>
-                                        <span>15:00–19:30</span>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>
-                                        <span class="fw-bold color">mer: </span>
-                                        <span class="fw-bold">Chiuso</span>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>
-                                        <span class="fw-bold color">gio: </span> 
-                                        <span class="fw-bold">Chiuso</span>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>
-                                        <span class="fw-bold color">ven: </span> 
-                                        <span class="fw-bold">Chiuso</span>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span> 
-                                        <span>
-                                            <span class="fw-bold color">sab: </span> 
-                                            <span>08:30–13:00, </span> 
-                                        </span>
-                                        <span>15:00–19:30</span>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <span> 
-                                    <span>
-                                        <span class="fw-bold color">dom: </span> 
-                                        <span>08:30–13:00, </span> 
-                                    </span>
-                                    <span>15:00–19:30</span>
-                                </span>     
                             </tr>
                         </tbody>
                     </div>
