@@ -8,6 +8,7 @@ export default{
     data(){
         return{
             store,
+            timeSet: `${moment().format("dddd")}`,
         }
     },
     components:{
@@ -23,38 +24,38 @@ export default{
     setup() {
         let todaysDate = new Date();
     },
-    methods:{
-        getHour(){
-            var dataDay = moment().format("dddd");
-            if (dataDay === 'Lunedì') {
-                moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
-                console.log('Lunedì');
-            } else if (dataDay === 'Martedì'){
-                moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
-                console.log('Martedì');
-            } else if (dataDay === 'Mercoledì'){
-                ' Close '
-                console.log('Mercoledì');
-            } else if (dataDay === 'Giovedì'){
-                ' Close '
-                console.log('Giovedì');
-            } else if (dataDay === 'Venerdì'){
-                ' Close '
-                console.log('Venerdì');
-            } else if (dataDay === 'Sabato'){
-                moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
-                console.log('Sabato');
-            } else if (dataDay === 'Domenica'){
-                moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
-                console.log('Domenica');
-            } else{
-                console.log('something went wrong, pleare reload the page ' + dataDay);
-            }
-        }
+    // methods:{
+    //     getHour(){
+    //         var dataDay = moment().format("dddd");
+    //         if (dataDay === 'Lunedì') {
+    //             moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
+    //             console.log('Lunedì');
+    //         } else if (dataDay === 'Martedì'){
+    //             moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
+    //             console.log('Martedì');
+    //         } else if (dataDay === 'Mercoledì'){
+    //             // document.getElementById("demo").innerHTML = dataDay;
+    //             console.log('Mercoledì');
+    //         } else if (dataDay === 'Giovedì'){
+    //             ' Close '
+    //             console.log('Giovedì');
+    //         } else if (dataDay === 'Venerdì'){
+    //             ' Close '
+    //             console.log('Venerdì');
+    //         } else if (dataDay === 'Sabato'){
+    //             moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
+    //             console.log('Sabato');
+    //         } else if (dataDay === 'Domenica'){
+    //             moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
+    //             console.log('Domenica');
+    //         } else{
+    //             console.log('something went wrong, pleare reload the page ' + dataDay);
+    //         }
+    //     }
         
-    },
+    // },
     
-   
+    
 }
 </script>
 
@@ -80,18 +81,71 @@ export default{
             
             <h6>Bar e Pizzeria</h6>
 
-            <div>
-                <span>
+            <div class="d-flex flex-column">
 
-                    {{ 
-                        moment().format("dddd") + 
-                        ' apertura alle ore '  +
-                        `${getHour()}`
+                <!-- All WEEK days -->
+
+                <!-- Monday -->
+                <span v-if="timeSet === 'Monday'">
+                    Lunedì
+                </span>
+                <!-- Tuesday -->
+                <span v-if="timeSet === 'Tuesday'">
+                    Martedì
+                </span>
+                <!-- Wednesday -->
+                <span v-if="timeSet === 'Wednesday'">
+                    Mercoledì
+                </span>
+                <!-- Thursday -->
+                <span v-if="timeSet === 'Thursday'">
+                    Giovedì
+                </span>
+                <!-- Friday -->
+                <span v-if="timeSet === 'Friday'">
+                    Venerdì
+                </span>
+                 <!-- Saturday -->
+                 <span v-if="timeSet === 'Saturday'">
+                    Sabato
+                </span>
+                 <!-- Sunday -->
+                 <span v-if="timeSet === 'Sunday'">
+                    Domenica
+                </span>
+
+                <span v-if="timeSet !== 'Wednesday' && 'Thursday' && 'Friday'"> apertura alle ore </span>
+
+                <!-- All CLOCK sets -->
+
+                <!-- Monday -->
+                <span class="color fw-bold" v-if="timeSet === 'Monday'"> {{moment().set({'hour': 15, 'minute': 0}).format("HH:mm") + ' - ' + moment().set({'hour': 19, 'minute': 30}).format("HH:mm") }} </span>
+
+                <!-- Tuesday -->
+                <span class="color fw-bold" v-if="timeSet === 'Tuesday'"> {{moment().set({'hour': 15, 'minute': 0}).format("HH:mm") + ' - ' + moment().set({'hour': 19, 'minute': 30}).format("HH:mm") }} </span>
+
+                <!-- Wednesday -->
+                <span class="color fw-bold" v-if="timeSet === 'Wednesday'"> Chiuso </span>
+                
+                <!-- Thursday -->
+                <span class="color fw-bold" v-if="timeSet === 'Thursday'"> Chiuso </span>
+
+                <!-- Friday -->
+                <span class="color fw-bold" v-if="timeSet === 'Friday'"> Chiuso </span>
+
+                <!-- Saturday -->
+                <span class="color fw-bold" v-if="timeSet === 'Saturday'"> 
+                    {{
+                        moment().set({'hour': 8, 'minute': 0}).format("HH:mm") + ' - ' + moment().set({'hour': 13, 'minute': 0}).format("HH:mm") + ' ' + moment().set({'hour': 15, 'minute': 0}).format("HH:mm") + ' - ' + moment().set({'hour': 19, 'minute': 30}).format("HH:mm")  
                     }} 
                 </span>
-                
-                <!-- <span> apertura alle ore </span>  -->
-                <!-- <span v-for="clock in store.clockData"> {{ clock.day }} </span>  -->
+
+                <!-- Sunday -->
+                <span class="color fw-bold" v-if="timeSet === 'Sunday'"> 
+                    {{
+                        moment().set({'hour': 8, 'minute': 0}).format("HH:mm") + ' - ' + moment().set({'hour': 13, 'minute': 0}).format("HH:mm") + ' ' + moment().set({'hour': 15, 'minute': 0}).format("HH:mm") + ' - ' + moment().set({'hour': 19, 'minute': 30}).format("HH:mm")  
+                    }} 
+                </span>
             </div>
 
         </div>
