@@ -17,12 +17,43 @@ export default{
     created: function () {
         this.moment = moment;
         moment.locale('it', {
-            weekdaysShort : ["Sab", "Lun", "Mar", "Mer", "Gio", "Ven", "Dom"]
+            weekdays : ["Sabato", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Domenica"]
         });
     },
     setup() {
         let todaysDate = new Date();
     },
+    methods:{
+        getHour(){
+            var dataDay = moment().format("dddd");
+            if (dataDay === 'Lunedì') {
+                moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
+                console.log('Lunedì');
+            } else if (dataDay === 'Martedì'){
+                moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
+                console.log('Martedì');
+            } else if (dataDay === 'Mercoledì'){
+                ' Close '
+                console.log('Mercoledì');
+            } else if (dataDay === 'Giovedì'){
+                ' Close '
+                console.log('Giovedì');
+            } else if (dataDay === 'Venerdì'){
+                ' Close '
+                console.log('Venerdì');
+            } else if (dataDay === 'Sabato'){
+                moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
+                console.log('Sabato');
+            } else if (dataDay === 'Domenica'){
+                moment().set({'hour': 8, 'minute': 30}).format("hh:mm")
+                console.log('Domenica');
+            } else{
+                console.log('something went wrong, pleare reload the page ' + dataDay);
+            }
+        }
+        
+    },
+    
    
 }
 </script>
@@ -50,9 +81,17 @@ export default{
             <h6>Bar e Pizzeria</h6>
 
             <div>
-                {{ moment().format("ddd") }} 
-                <span>apertura alle ore </span> 
-                <span>8:30</span> 
+                <span>
+
+                    {{ 
+                        moment().format("dddd") + 
+                        ' apertura alle ore '  +
+                        `${getHour()}`
+                    }} 
+                </span>
+                
+                <!-- <span> apertura alle ore </span>  -->
+                <!-- <span v-for="clock in store.clockData"> {{ clock.day }} </span>  -->
             </div>
 
         </div>
